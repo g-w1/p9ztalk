@@ -1,2 +1,16 @@
 Linkers!
 --------
+
+|  Function A |
+|		 	  |
+|      	      |
+
+
+|  Function B |
+|		 	  |  + | Constants | + (Object Files?) -> Output File
+|      	      |
+
+|  Function C |
+|		 	  |
+|      	      |
+

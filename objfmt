@@ -1,2 +1,9 @@
 Object Formats
 --------------
+
+ELF
+Mach-O (macOS)
+WebAssembly
+COFF (Windows)
+SPIRV
+Plan9 a.out

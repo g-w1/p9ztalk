@@ -1,2 +1,14 @@
 What is Plan9
 -------------
+
+* Sucessor to unix
+* Lots of innovative ideas that
+  were adopted by other systems (utf-8, /proc, ...)
+* "Everything is a filesystem"
+
+Talks:
+fosdemtalk.png
+bsdtvtalk.png
+
+For this presentation we can think of 
+it as another unix, but it is not.
