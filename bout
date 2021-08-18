@@ -5,6 +5,7 @@ What is Plan9
 * Lots of innovative ideas that
   were adopted by other systems (utf-8, /proc, ...)
 * "Everything is a filesystem"
+* Everything is text
 
 Talks:
 fosdemtalk.png

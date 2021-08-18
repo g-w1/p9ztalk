@@ -7,3 +7,7 @@ WebAssembly
 COFF (Windows)
 SPIRV
 Plan9 a.out
+
+Gets loaded by operating system (usually)
+
+/sys/src/9/port/sysproc.c:/sysexec/
