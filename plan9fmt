@@ -6,20 +6,20 @@ a.out(6)
 File:
 
 ------ header               : 32/40 bytes
-magic  						: u32
+magic                       : u32
 size of text section        : u32
 size of data section        : u32
 size of bss section         : u32
 size of symbol table        : u32
-entry point			        : u32 *
+entry point                 : u32 *
 size of pc/sp offset table  : u32
 size of pc/line number table: u32
-* fat header 				: u64
------- text section   		: N bytes
+* fat header                : u64
+------ text section         : N bytes
 machine code .....
------- data section			: global data that is used in the program
-strings, arrays, globals
------- symbol table
+------ data section         : N bytes
+global data that is used in the program
+------ symbol table         : N bytes
 value: u32/u64
 type : u8
 name : N bytes
