@@ -1,0 +1,21 @@
+Debug Info Format
+-----------------
+
+- 4 Operation Bytecode
+
+
+- 0 w x y z -> interpret w x y z as a big-endian i32, and add it to the line offset
+
+
+- x when x < 65 -> add x to line offset
+
+
+- x when x < 129 -> subtract 64 from x and subtract it from the line offset
+
+
+- x -> subtract 129 from x, multiply it by the quanta of the instruction size 1 on x86_64), and add it to the pc
+
+
+after every opcode, add the quanta of the instruction size to the pc
+
+example: TODO

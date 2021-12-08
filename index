@@ -3,3 +3,4 @@ bout
 linkers
 objfmt
 plan9fmt
+debuginfo
