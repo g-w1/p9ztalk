@@ -4,3 +4,5 @@ linkers
 objfmt
 plan9fmt
 debuginfo
+debugexample
+demotime

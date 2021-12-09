@@ -1,0 +1,6 @@
+Demo Time
+---------------
+
+ssh jacob@192.168.1.153 cat /tmp/test.zig
+ssh jacob@192.168.1.153 ~/.local/bin/zig build-exe /tmp/test.zig -target x86_64-plan9-none -fno-stage1
+window

@@ -1,12 +1,16 @@
 Object Formats
 --------------
 
-ELF
+ELF (Linux, BSDs, SerenityOS, ...)
 Mach-O (macOS)
 WebAssembly
 COFF (Windows)
 SPIRV
+C
 Plan9 a.out
+
+/home/jacob/dev/zig/src/link
+
 
 Gets loaded by operating system (usually)
 

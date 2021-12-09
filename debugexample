@@ -1,0 +1,25 @@
+Debug Info Examples
+---------------------------
+
+# Example:
+
+000000005a02850201840286018b070184408c018200ffffff558681
+
+00 0000005;  add 5 to line offset, 4 to pc
+a02850201840286018b070184408c018200ffffff558681; TODO
+
+# Decoder:
+
+while (true) {
+    if (curpc >= symval) break;
+    var u = reader.readByte() catch break;
+    if (u == 0)
+        lc += try reader.readIntBig(i32)
+    else if (u < 65)
+        lc += u
+    else if (u < 129)
+        lc -= (u - 64)
+    else
+        curpc += (u - 129) * pcquant;
+    curpc += pcquant;
+}
