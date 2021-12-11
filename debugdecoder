@@ -1,0 +1,16 @@
+Decoder
+-----------
+
+while (true) {
+    if (curpc >= symval) break; // if the pc is >= the symbol pc, stop, we've found the line
+    var u = reader.readByte() catch break;
+    if (u == 0)
+        lc += try reader.readIntBig(i32)
+    else if (u < 65)
+        lc += u
+    else if (u < 129)
+        lc -= (u - 64)
+    else
+        curpc += (u - 129) * pcquant;
+    curpc += pcquant;
+}

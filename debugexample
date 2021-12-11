@@ -1,25 +1,29 @@
-Debug Info Examples
----------------------------
-
-# Example:
+Debug Info Example
+--------------------------
 
 000000005a02850201840286018b070184408c018200ffffff558681
 
-00 0000005;  add 5 to line offset, 4 to pc
-a02850201840286018b070184408c018200ffffff558681; TODO
+->
 
-# Decoder:
+00 0000005a;  lc += 5a; pc += 1
+02 ; lc += 2; pc += 1
+85; pc += 4; pc += 1
+02; lc += 2; pc += 1
+01; lc += 1; pc += 1
+84; pc += 3; pc += 1
+02; lc += 2; pc += 1
+86; pc += 5; pc += 1
+01; lc += 1; pc += 1
+8b; pc += 10; pc += 1
+07; lc += 7; pc += 1
+01; lc += 1; pc += 1
+84; pc += 3; pc += 1
+40; lc += 64; pc += 1
+8c; pc += 11; pc += 1
+01; lc += 1; pc += 1
+82; pc += 1; pc += 1
+00ffffff55; lc -= 171
+86; pc += 1; pc += 1
+81; pc += 0; pc += 1
 
-while (true) {
-    if (curpc >= symval) break;
-    var u = reader.readByte() catch break;
-    if (u == 0)
-        lc += try reader.readIntBig(i32)
-    else if (u < 65)
-        lc += u
-    else if (u < 129)
-        lc -= (u - 64)
-    else
-        curpc += (u - 129) * pcquant;
-    curpc += pcquant;
-}
+Just stop when the pc or lc is where you want it
