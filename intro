@@ -3,3 +3,7 @@ Linking Plan9 Executables In Zig
 --------------------------------
 
 Jacob G-W
+
+1. Plan9 Executable Format
+2. Zig Linker For The Format
+3. Demo!
