@@ -1,7 +1,12 @@
 Demo Time
 ---------------
 
-echo 'pub fn main() void {}' |ssh jacob@192.168.1.153 'cat > /tmp/test.zig'
+echo 'pub fn main() void {
+	const str = "Zig Showtime!!!\n";
+	_ = @import("std").os.plan9.syscall_bits.syscall4(.PWRITE, 1, @ptrToInt(str), str.len, 0);
+}' |ssh jacob@192.168.1.153 'cat > /tmp/test.zig'
 ssh jacob@192.168.1.153 cat /tmp/test.zig
 ssh jacob@192.168.1.153 ~/.local/bin/zig build-exe /tmp/test.zig -target x86_64-plan9-none -fno-stage1
-window
+
+# ratrace is like strace
+ratrace -c /home/jacob/test

@@ -1,0 +1,15 @@
+Symbols
+----------
+
+text: .t, .T
+data: .d, .D
+bss?
+file: .z
+
+.z: start.zig:
+	.T: text symbol from start.zig
+	.t: another text symbol from start.zig
+.z: main.zig:
+	.T: main
+
+Acid debugger is used on Plan9.
