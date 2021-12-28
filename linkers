@@ -6,7 +6,7 @@ Linkers!
 |                   |
 
 |  Function B  |
-|                   |  + | Constants | + (Object Files*) -> Output File
+|                   |  + | Globals | + (Object Files*) -> Output File
 |                   |
 
 |  Function C |
