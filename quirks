@@ -8,3 +8,5 @@ http://git.9front.org/plan9front/plan9front/c9bf96e3e04a46122ec33840d69ae2341ceb
 http://git.9front.org/plan9front/plan9front/c2297ce5c180e98f2217a691a25d19a300956d9f/commit.html
 
 * Lots of x86_64 backend bugs ...
+
+	* Developed PrintMir as a debugging tool

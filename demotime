@@ -2,7 +2,7 @@ Demo Time
 ---------------
 
 echo 'pub fn main() void {
-	const str = "Zig Showtime!!!\n";
+	const str = "Hey Zig Showtime!!!\n";
 	_ = @import("std").os.plan9.syscall_bits.syscall4(.PWRITE, 1, @ptrToInt(str), str.len, 0);
 }' |ssh jacob@192.168.1.153 'cat > /tmp/test.zig'
 ssh jacob@192.168.1.153 cat /tmp/test.zig
