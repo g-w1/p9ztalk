@@ -2,40 +2,28 @@ Plan9's a.out Format
 --------------------------
 
 a.out(6)
-
-File:
-
------- header               : 32/40 bytes
-magic                        : u32
-size of text section     : u32
-size of data section     : u32
-size of bss section       : u32
-size of symbol table    : u32
+------ header
+magic                         : u32
+size(text)                    : u32
+size(data)                   : u32
+size(bss)                     : u32
+size(symbol table)       : u32
 entry point                 : u32 *
 size of pc/sp code        : u32 (this is old fashoned, only in use on MC680X0)
 size of pc/line code      : u32
 * fat header                : u64
-
------- text section         : N bytes
-*machine code*
-
------- data section         : N bytes
-*global data*
-
------- symbol table        : N bytes
+------ text section
+machine code
+------ data section
+global data
+------ symbol table
 value: u32/u64
 type : u8
 name : N bytes
-
 ------ pc/sp code
 DEPRECIATED
-------
-
 ------ pc/line code
-special bytecode, examples on next page
+special bytecode
 ------
-
 
 example.asm
-
-a.out(6)

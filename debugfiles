@@ -4,7 +4,10 @@ Symbols
 text: .t, .T
 data: .d, .D
 bss?
-file: .z
+file segment: .f
+file: .z (made up of f indexes)
+
+*Table*:
 
 .z: start.zig:
 	.T: text symbol from start.zig

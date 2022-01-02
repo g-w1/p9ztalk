@@ -7,10 +7,12 @@ Debug Info Format
 	Line Count = 0
 	Program Counter = Start of Text Section (can only increase)
 
-- 0 w x y z 		-> interpret w x y z as a big-endian i32, and add it to the line offset
+- 0 w x y z 		-> interpret w x y z as a big-endian i32, and add it to the
+				     line offset
 - x when x < 65 	-> add x to line offset
 - x when x < 129 	-> subtract 64 from x and subtract it from the line offset
-- x 				-> subtract 129 from x, multiply it by the min instruction size, and add it to the pc
+- x 				-> subtract 129 from x, multiply it by the min instruction
+				     size, and add it to the pc
 
 after every opcode, add the quanta of the instruction size to the pc
 

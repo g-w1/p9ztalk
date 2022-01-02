@@ -7,4 +7,6 @@ debuginfo
 debugexample
 debugfiles
 incrementallinker
+got
+funcbyfile
 demotime

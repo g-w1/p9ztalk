@@ -4,10 +4,10 @@ Object Formats
 ELF (Linux, BSDs, SerenityOS, ...)
 Mach-O (macOS)
 WebAssembly
-COFF (Windows)
+PE/COFF (Windows)
 SPIRV
 C
-Plan9 a.out
+***Plan9 a.out***
 
 /home/jacob/dev/zig/src/link
 
