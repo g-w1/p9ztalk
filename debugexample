@@ -22,7 +22,7 @@ Debug Info Example
 8c; pc += 11; pc += 1
 01; lc += 1; pc += 1
 82; pc += 1; pc += 1
-00ffffff55; lc -= 171
+00 ffffff55; lc -= 171
 86; pc += 1; pc += 1
 81; pc += 0; pc += 1
 

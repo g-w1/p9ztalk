@@ -5,8 +5,9 @@ Linkers!
 |                   |
 |                   |
 
-|  Function B  |
-|                   |  + |Globals| + (Object Files*) -> Output File
+|                    |
+|  Function B  |  + |Globals| + (Object Files*) -> Output File
+|                    |
 
 |  Function C |
 |                   |

@@ -1,6 +1,11 @@
 Global Offset Table
 ------------------------
 
-Assigning a got index: /home/jacob/dev/zig/src/link/Plan9.zig:/fn seeDecl/
-Writing the got: /home/jacob/dev/zig/src/link/Plan9.zig:435
-Calling a function: /home/jacob/dev/zig/src/arch/x86_64/CodeGen.zig:2016
+Assigning a got index:
+/home/jacob/dev/zig/src/link/Plan9.zig:/fn seeDecl/
+
+Writing to the got:
+/home/jacob/dev/zig/src/link/Plan9.zig:445
+
+Calling a function: 
+/home/jacob/dev/zig/src/arch/x86_64/CodeGen.zig:/const got_index = func_payload.data.owner_decl.link.plan9.got_index.\?;/
