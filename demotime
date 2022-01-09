@@ -7,6 +7,7 @@ echo 'pub fn main() void {
 	const str = "Hey Zig Showtime!!!\n";
 	_ = @import("std").os.plan9.syscall_bits.syscall4(.PWRITE, 1, @ptrToInt(str), str.len, 0);
 }'  > /home/jacob/test.zig
+
 # compile it!
 ssh jacob@192.168.1.153 ~/dev/zig/zig-out/bin/zig build-exe /home/jacob/test.zig -target x86_64-plan9-none -fno-stage1
 

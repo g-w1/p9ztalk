@@ -11,7 +11,6 @@ C
 
 /home/jacob/dev/zig/src/link
 
-
 Gets loaded by something (operating system usually)
 
 /sys/src/9/port/sysproc.c:/sysexec/

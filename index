@@ -4,6 +4,7 @@ linkers
 objfmt
 plan9fmt
 debuginfo
+debugdecoder
 debugexample
 debugfiles
 incrementallinker
