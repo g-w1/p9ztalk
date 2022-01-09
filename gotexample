@@ -1,0 +1,37 @@
+Global Offset Table: Why?
+---------------------------------
+
+.text
+a:
+	0	call 6	; call c
+	1	ret
+b:
+	2	nop
+	3	nop
+	4	nop
+	5	ret
+c:
+	6	mov rax, 1
+	7	ret
+
+What happens when we change the length of B? a has to change
+
+.text
+a:
+	0	call [got + 2 * 8]	; call c
+	1	ret
+b:
+	2	nop
+	3	nop
+	4	nop
+	5	ret
+c:
+	6	mov rax, 1
+	7	ret
+.data
+got:
+	[0, 2, 6]
+
+What happens when we change the length of B? a doesn't have to change
+got:
+	[0, 2, 7]

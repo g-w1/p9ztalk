@@ -5,7 +5,7 @@ Assigning a got index:
 /home/jacob/dev/zig/src/link/Plan9.zig:/fn seeDecl/
 
 Writing to the got:
-/home/jacob/dev/zig/src/link/Plan9.zig:445
+/home/jacob/dev/zig/src/link/Plan9.zig:448
 
 Calling a function: 
 /home/jacob/dev/zig/src/arch/x86_64/CodeGen.zig:/const got_index = func_payload.data.owner_decl.link.plan9.got_index.\?;/

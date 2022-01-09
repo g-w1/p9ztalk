@@ -3,17 +3,17 @@ Symbols
 
 text: .t, .T
 data: .d, .D
-bss?
+bss: .b, .B
 file segment: .f
 file: .z (made up of f indexes)
 
 *Table*:
 
 # example symbol table
-.z: start.zig:
+.z: / home / zig / lib / start.zig:
 	.T: text symbol from start.zig
 	.t: another text symbol from start.zig
-.z: main.zig:
+.z: / tmp / main.zig:
 	.T: main
 .D: some_string_literal_symbol
 

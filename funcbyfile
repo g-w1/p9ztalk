@@ -1,6 +1,9 @@
 Get Output, Store It
 --------------------------
 
-
 /home/jacob/dev/zig/src/link/Plan9.zig:/^pub fn updateFunc/
 /home/jacob/dev/zig/src/link/Plan9.zig:/^pub fn updateDecl/
+
+# flush it!!!
+
+/home/jacob/dev/zig/src/link/Plan9.zig:/^pub fn flushModule/

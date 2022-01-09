@@ -1,5 +1,5 @@
-Incremental Linker
------------------------
+Incremental Zig Linker
+----------------------------
 
 Previous art:
 /sys/src/cmd/6l/asm.c:/^asmb/
